@@ -7,6 +7,7 @@ export class TaskService {
     { title: 'Aprender Angular', priority: 'High', completed: false },
     { title: 'Hacer de comer', priority: 'Medium', completed: true },
     { title: 'Leer un libro', priority: 'Low', completed: false },
+    { title: 'Hacer ejercicio', priority: 'Low', completed: false },
   ]);
 
   addTask(task: TaskInterface): void {
