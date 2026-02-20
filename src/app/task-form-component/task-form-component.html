@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="task-form">
+  <div class="field">
+    <input formControlName="title" placeholder="Título de la tarea" />
+    @if (titleInvalid) { 
+      <span class="error">El título es requerido</span>
+    }
+  </div>
+
+  <select formControlName="priority">
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+  <label class="checkbox">
+    <input type="checkbox" formControlName="completed" /> Completada
+  </label>
+
+  <button type="submit">Agregar tarea</button>
+</form>

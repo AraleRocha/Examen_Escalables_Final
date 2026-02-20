@@ -1,0 +1,22 @@
+.task-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.task-card.completed .title {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-card.high { border-left: 4px solid red; }
+.task-card.high .priority { color: red; font-weight: bold; }
+
+.task-card.medium { border-left: 4px solid orange; }
+.task-card.medium .priority { color: orange; font-weight: bold; }
+
+.task-card.low { border-left: 4px solid green; }
+.task-card.low .priority { color: green; font-weight: bold; }
